@@ -1,6 +1,6 @@
 #include "stringM.h"
 
-int length(char *string){
+int length(char string[]){
     int len=0;
     for(int i=0;string[i]!='\0';i++){
         len++;
@@ -8,7 +8,7 @@ int length(char *string){
     return len;
 }
 
-int compareString(char *s1, char *s2){
+int compareString(char s1[], char s2[]){
     if(length(s1)!=length(s2)){
         return -1;
     }
