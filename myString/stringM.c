@@ -12,7 +12,8 @@ int compareString(char s1[], char s2[]){
     if(length(s1)!=length(s2)){
         return -1;
     }
-    for(int i=0;length(s1);i++){
+
+    for(int i=0;i<length(s1);i++){
         if(s1[i]!=s2[i]) return -1;
     }
     return 0;
@@ -23,6 +24,7 @@ int polyndrome(char *s1){
     int end=l-1;
     for(int i=0;i<l;i++){
         if(s1[i]!=s1[end])return -1;
+        end--;
     }
     return 0;
 }
